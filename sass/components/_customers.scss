@@ -1,0 +1,50 @@
+.customers {
+    padding: 94px 215px;
+  }
+  
+  .customers__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    color: #afb1b8;
+  }
+  
+  .customers__item {
+    display: block;
+    display: flex;
+    width: 170px;
+    height: 92px;
+  }
+  
+  .customers__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+  
+    border: 1px solid currentColor;
+    border-radius: 4px;
+  
+    color: #afb1b8;
+
+    &:hover,
+    &:focus {
+        color: var(--link-color);}
+  }
+  
+  .customers__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+  
+    @extend %transition;
+  }
+  
+ 

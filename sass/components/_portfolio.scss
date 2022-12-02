@@ -1,0 +1,128 @@
+.portfolio.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+  
+  /* Кнопки*/
+  .products__btns {
+    gap: 8px;
+    justify-content: center;
+    margin-bottom: 50px;
+  }
+
+  .products__btn-item {
+    padding: 6px 22px;
+    font-weight: 500;
+    line-height: 1.62;
+  
+    background: var(--third-bg-color);
+    color: var(title-text-color);
+  
+    @extend %transition;
+  }
+  
+  .products__btn-item:first-child {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  
+  .products__btn-item{
+    &:focus,
+    &:hover,
+    &:active {
+      color: var(--primary-bg-color);
+      background: var(--link-color);
+      box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12);
+      box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.08);
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1);
+    }
+  }
+  
+
+  /* --------ПРОЕКТИ------- */
+
+  .products__list {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-right: 0;
+  }
+  
+  .products__item {
+    max-width: 370px;
+    flex-basis: calc((100% - 30px * 3) / 3);
+  
+    @extend %transition;
+  }
+  
+  /* ....Overley..... */
+  
+  .team-thumb {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+  
+    background-color: rgb(33, 150, 243, 0.9);
+  
+    transform: translateY(100%);
+  
+    transition: transform 250ms;
+  }
+  
+  .overlay-text {
+    display: flex;
+    align-items: center;
+    padding: 63px 24px;
+  
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    color: #ffffff;
+  }
+  
+  .products__item:hover .overlay {
+    transform: translateY(0);
+  }
+  
+  .products__link {
+    display: block;
+  
+    @extend %transition;
+
+    &:hover {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+    }
+  }
+  
+
+  
+  .products__border {
+    padding: 20px 24px;
+    border-right: 1px solid #eeeeee;
+    border-bottom: 1px solid #eeeeee;
+    border-left: 1px solid #eeeeee;
+  }
+  
+  .products__name {
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    margin-bottom: 4px;
+  
+    color: var(--title-text-color);
+  }
+  
+  .products__description {
+    font-size: 16px;
+    line-height: 1.9;
+    color: #757575;
+  }

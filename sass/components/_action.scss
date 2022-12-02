@@ -1,0 +1,41 @@
+.action {
+    padding-bottom: 94px;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    margin-bottom: 50px;
+
+    color: #212121;
+  }
+  
+  .action__list,
+  .comand__list {
+    gap: 30px;
+  }
+  
+  .action__item {
+    position: relative;
+  }
+  
+  .action__descrption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 100%;
+  
+    color: var(--primary-bg-color);
+    background-color: rgba(47, 48, 58, 0.8);
+  
+    position: absolute;
+    bottom: 0;
+  }
+  

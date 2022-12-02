@@ -1,0 +1,255 @@
+.contain-contacts {
+    margin-right: 70px;
+  }
+  
+  .list-footer {
+    display: inline;
+  }
+  
+  .studio {
+    color: var(--primary-bg-color);
+  }
+  
+  .work {
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+    letter-spacing: 0.03em;
+  }
+  
+  .footer-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background: var(--secondary-bg-color);
+  }
+  
+  .maps.link,
+  .contact-footer {
+    display: block;
+    line-height: 1.71;
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  .maps.link {
+    color: var(--primary-bg-color);
+    @extend %transition;
+  }
+  
+  .contact-footer.link {
+    color: rgba(255, 255, 255, 0.6);
+  
+    @extend %transition;
+  }
+  
+  .contact-footer.link:hover,
+  .contact-footer.link:focus,
+  .maps.link:hover,
+  .maps.link:focus {
+    color: var(--link-color);
+  }
+  
+  .footer-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  
+  .container.footer {
+    display: flex;
+    align-items: baseline;
+  }
+  
+  .networks-footer{margin-right: 93px;}
+
+  .networks-title{
+    display: flex;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #ffffff;
+
+    margin-bottom: 20px;
+
+  }
+  
+  .contain-socials {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .socials-link.footer {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+  }
+  
+  .socials-link {
+    @extend %transition;
+  }
+  
+  .socials-link:hover,
+  .socials-link:focus {
+    background-color: var(--link-color);
+    color: #ffffff;
+  }
+  
+  .socials-icon {
+    fill: currentColor;
+  }
+  
+  .networks__link--bg-dark {
+    background-color:rgba(255, 255, 255, 0.1) ;
+  }
+
+  .networks__icon--white{fill: #fff;}
+  
+
+
+  /* Підпишись  */
+  
+  .contain-socials {
+    margin-right: auto;
+  }
+  
+  .text-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  
+    margin-bottom: 20px;
+  }
+  
+  .foot-group {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .input-email {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    height: 50px;
+    width: 378px;
+    background-color: var(--secondary-bg-color);
+  
+    /* outline: 1px solid transparent; */
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  
+    padding-left: 16px;
+  }
+  
+  .input-email::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .btn-footer {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    height: 50px;
+    width: 200px;
+    gap: 10px;
+  
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    color: var(--primary-bg-color);
+    background-color: var(--link-color);
+  }
+  
+  .btn-icon {
+    fill: #ffffff;
+  }
+
+
+  .contain-socials {
+    margin-right: auto;
+  }
+  
+  .text-label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+  
+    color: #ffffff;
+  
+    margin-bottom: 20px;
+  }
+  
+  .foot-group {
+    display: flex;
+    gap: 12px;
+  }
+  
+  .input-email {
+    color: #ffffff;
+    font-size: 18px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    height: 50px;
+    width: 378px;
+    background-color: var(--secondary-bg-color);
+  
+    /* outline: 1px solid transparent; */
+  
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  
+    padding-left: 16px;
+  }
+  
+  .input-email::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+  
+    color: rgba(255, 255, 255, 0.6);
+  }
+  
+  .btn-footer {
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+  
+    height: 50px;
+    width: 200px;
+    gap: 10px;
+  
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+  
+    color: var(--primary-bg-color);
+    background-color: var(--link-color);
+  }
+  
+  .btn-icon {
+    fill: #ffffff;
+  } 
+

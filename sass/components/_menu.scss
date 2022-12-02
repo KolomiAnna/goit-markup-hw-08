@@ -1,0 +1,41 @@
+.menu {
+    align-items: center;
+    gap: 50px;
+  }
+  
+  .menu__item {
+    position: relative;
+    /* outline: 1px solid red; */
+  }
+  .menu__link {
+    display: block;
+    
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--title-text-color);
+  
+    @extend %transition;
+  }
+  
+  .current {
+    color: var(--link-color);
+  }
+  
+  .current::after {
+    content: "";
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 107%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 4px;
+    bottom: 0;
+  
+    background: var(--link-color);
+    border-radius: 2px;
+  
+    position: absolute;
+  }

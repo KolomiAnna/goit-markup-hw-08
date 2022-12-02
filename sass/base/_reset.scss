@@ -1,0 +1,30 @@
+.list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+  
+  .link {
+    text-decoration: none;
+  }
+
+  .link:hover,
+  .link:focus {
+  color: var(--link-color);}
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
