@@ -1,33 +1,87 @@
 .slogan {
-    margin: 0 auto;
+    background-position:center;
+    background-size: cover;
     max-width: 1600px;
     background-repeat: no-repeat;
+    padding-top: 118px;
+    padding-bottom: 118px;
     background-color: var(--secondary-bg-color);
-    background-image: linear-gradient(
+background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
-        rgba(47, 48, 58, 0.4)
-      ),
-      url(../img/fon-img.jpg);
+         rgba(47, 48, 58, 0.4));
+
+                // Mobile screen
+  background-image:url( ../img/phone/fon_s@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+  background-image:url( ..img/phone/fon_s@2x.jpg);}
+
+
+@media screen and (min-width:481) {                                    
+    background-image:url( ../img/tablet/fon_m@1x.jpg);
+   
+       @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image:url( ../img/tablet/fon_m@2x.jpg);}}
+
+
+
+
+             // Tablet screen     
+@media screen and (min-width:769px) {                           
+    background-image:url( ../img/desktop/fon@1x.webp);
   
-    padding-top: 200px;
-    padding-bottom: 200px;
-  }
-  
+       @media (min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi),
+       (min-resolution: 2dppx) {
+    background-image:url(../img/desktop/fon_l@2x.jpg);}}
+      
+
+
+@media screen and (min-width:1200) {   
+  padding-top: 200px;
+  padding-bottom:  200px;   
+
+}}
+
+   
+
+
+
+
+
+
   .slogan__title {
-    width: 696px;
+   
+
+    width: 360px;
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin: auto;
-    margin-bottom: 30px;
-    color: var(--primary-bg-color);
+font-size: 26px;
+line-height: 1.61;
+text-align: center;
+letter-spacing: 0.06em;
+text-transform: uppercase;
+margin: auto;
+margin-bottom: 30px;
+color: var(--primary-bg-color);
+
+
+    @media screen and (min-width:1200px){
+      width: 696px;
+
+      font-size: 44px;
+      line-height: 1.36;
+     }
+    
+   
   }
   
   .btn-service {
-    min-width: 216px;
+    min-width: 200px;
+    
     min-height: 50px;
     padding: 10px 32px;
     font-weight: 700;
@@ -39,6 +93,13 @@
     background: var(--link-color);
   
     @extend %transition;
+
+
+
+    @media screen and (min-width:1200px){
+    min-width: 216px;}
+
+
   }
   
   .btn-service{

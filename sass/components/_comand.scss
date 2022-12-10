@@ -1,19 +1,55 @@
 .comand {
     background-color: var(--third-bg-color);
+
+             //  Phone and Tablet screen
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px){
     padding-top: 94px;
     padding-bottom: 94px;
-  }
+    }}
   
+  .comand__list{
+    @media screen and (min-width: 480px)and (max-width: 1199px){
+    display: flex;
+    flex-wrap: wrap;
+  }}
+
+
   .comand__item {
     background-color: var(--primary-bg-color);
     border: 1px solid rgba(0, 0, 0, 0.12);
     border-radius: 3px;
     box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.12);
+
+    @media screen and (min-width: 480px){
+      flex-basis: calc(100%/1);
+    }
+
+    @media screen and (min-width: 768px){
+      flex-basis: calc((100% - 30px)/2);
+    }
+
+
+
+
   }
   
   .comand__member {
     padding-top: 30px;
-    padding-bottom: 30px;
+   
+    @media screen and (min-width: 480px){
+      padding-bottom: 24px;
+    }
+
+    @media screen and (min-width: 768px){
+      padding-bottom: 24px;
+    }
+  
+    @media screen and (min-width: 1200px){
+      padding-bottom: 30px;
+    }
   }
   
   .comand__name {
@@ -69,5 +105,4 @@
 }
   
   .networks__icon {
-    fill: currentColor;
-  }
+    fill: currentColor;}

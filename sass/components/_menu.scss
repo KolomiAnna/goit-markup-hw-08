@@ -1,41 +1,113 @@
+// .menu {
+//   // @media (min-width: 768px){
+//     display: flex;
+//     align-items: center;
+//     gap: 51px;
+
+//   }
+  
+
+//   .menu__item {
+//     position: relative;
+   
+//   }
+
+//   .menu__link {
+//     display: block;
+//     font-size: 14px;
+//     font-weight: 500;
+//     line-height: 1.14;
+//     letter-spacing: 0.02em;
+//     color: var(--title-text-color);
+  
+//     @extend %transition;
+//   }
+  
+//   .current {
+//     color: var(--link-color);
+//   }
+  
+//   .current::after {
+//     content: "";
+//     display: block;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 107%;
+//     left: 50%;
+//     transform: translateX(-50%);
+//     height: 4px;
+//     bottom: 0;
+  
+//     background: var(--link-color);
+//     border-radius: 2px;
+  
+//     position: absolute;
+//   }
+
+//   .menu__icon{
+//     fill: black;
+//   }
+
+
+// .hero{
+//   @media screen (min-width: 768px;) and (max-width:1199px;)
+//     {display: flex;
+      
+//       justify-content:space-between;
+// }
+
 .menu {
-    align-items: center;
-    gap: 50px;
-  }
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.menu__item{
+margin-left: auto;
+margin-right: auto;
+}
+
+.menu__link {
+  @media (min-width: 768px){
+ padding-top: 32px;
+ padding-bottom: 32px;
+
+}}
+
+.menu__item {
+  position: relative;
+  /* outline: 1px solid red; */
+}
+.menu__link {
+  display: block;
   
-  .menu__item {
-    position: relative;
-    /* outline: 1px solid red; */
-  }
-  .menu__link {
-    display: block;
-    
-    font-weight: 500;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--title-text-color);
-  
-    @extend %transition;
-  }
-  
-  .current {
-    color: var(--link-color);
-  }
-  
-  .current::after {
-    content: "";
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 107%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    bottom: 0;
-  
-    background: var(--link-color);
-    border-radius: 2px;
-  
-    position: absolute;
-  }
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
+
+  @extend %transition;
+}
+
+.current {
+  color: var(--link-color);
+}
+
+.current::after {
+  content: "";
+  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  bottom: 0;
+
+  background: var(--link-color);
+  border-radius: 2px;
+
+  position: absolute;
+}
