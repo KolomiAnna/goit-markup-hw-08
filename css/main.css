@@ -295,6 +295,7 @@ img {
 }
 
 .slogan {
+  margin: 0 auto;
   background-position: center;
   background-size: cover;
   max-width: 1600px;
@@ -1083,6 +1084,11 @@ img {
   transition: transform 250ms, opacity 250ms, -webkit-transform 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+  }
 }
 
 .modal-btn {
