@@ -283,6 +283,7 @@ img {
 
 .contacts__icon {
   fill: currentColor;
+  margin-right: 8px;
 }
 
 @media (min-width: 1200px) {
@@ -300,37 +301,41 @@ img {
   background-repeat: no-repeat;
   padding-top: 118px;
   padding-bottom: 118px;
-  background-color: var(--secondary-bg-color);
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4)));
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
-  background-image: url(../img/phone/fon_s@1x.jpg);
+  background-color: var #C4C4C4;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/phone/fon_s@1x.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/phone/fon_s@1x.jpg);
 }
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .slogan {
-    background-image: url(..img/phone/fon_s@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..img/phone/fon_s@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..img/phone/fon_s@2x.jpg);
   }
 }
 @media screen and (min-width: 481) {
   .slogan {
-    background-image: url(../img/tablet/fon_m@1x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/tablet/fon_m@1x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/fon_m@1x.jpg);
   }
 }
 @media screen and (min-width: 481) and (min-device-pixel-ratio: 2), screen and (min-width: 481) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481) and (min-resolution: 192dpi), screen and (min-width: 481) and (min-resolution: 2dppx) {
   .slogan {
-    background-image: url(../img/tablet/fon_m@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/tablet/fon_m@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tablet/fon_m@2x.jpg);
   }
 }
 @media screen and (min-width: 769px) {
   .slogan {
-    background-image: url(../img/desktop/fon@1x.webp);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/desktop/fon@1x.webp);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/fon@1x.webp);
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
   .slogan {
-    background-image: url(../img/desktop/fon_l@2x.jpg);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../img/desktop/fon_l@2x.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/desktop/fon_l@2x.jpg);
   }
 }
-@media screen and (min-width: 1200) {
+@media screen and (min-width: 1200px) {
   .slogan {
     padding-top: 200px;
     padding-bottom: 200px;
@@ -363,6 +368,7 @@ img {
   padding: 10px 32px;
   font-weight: 700;
   line-height: 1.87;
+  letter-spacing: 0.06em;
   display: block;
   margin: auto;
   color: var(--primary-bg-color);
@@ -829,6 +835,7 @@ img {
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
+    margin-right: auto;
   }
 }
 
@@ -838,7 +845,9 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .footer__contacts {
+    text-align: left;
     margin-right: 70px;
+    margin-bottom: 0;
   }
 }
 
@@ -877,11 +886,6 @@ img {
     margin-bottom: 60px;
   }
 }
-@media screen and (min-width: 1200px) {
-  .footer__networks {
-    margin-right: 93px;
-  }
-}
 
 .networks__title {
   display: block;
@@ -891,6 +895,11 @@ img {
   font-size: 14px;
   color: #ffffff;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .networks__title {
+    text-align: left;
+  }
 }
 
 .networks__link--bg-dark {
@@ -995,21 +1004,36 @@ img {
 }
 
 .footer__btn {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-left: auto;
   margin-right: auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
   letter-spacing: 0.06em;
   height: 50px;
   width: 200px;
+  gap: 12px;
   border: none;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   color: var(--primary-bg-color);
   background-color: var(--link-color);
+}
+@media screen and (min-width: 1200px) {
+  .footer__btn {
+    gap: 10px;
+  }
 }
 
 .footer__icon {
@@ -1047,7 +1071,7 @@ img {
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
           transform: translateX(-50%) translateY(-50%);
-  width: 528px;
+  width: 450px;
   height: 581px;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1130,7 +1154,7 @@ img {
   display: flex;
   font-size: 12px;
   line-height: 1.17;
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
   margin-bottom: 4px;
 }
 
@@ -1288,13 +1312,19 @@ img {
 
 .modal-form-agreement-desc {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.16;
   letter-spacing: 0.03em;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
           user-select: none;
+}
+@media screen and (min-width: 1200px) {
+  .modal-form-agreement-desc {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 
 .modal-form-btn {
@@ -1451,6 +1481,11 @@ img {
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
+}
+
+.products__border:hover {
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .products__name {

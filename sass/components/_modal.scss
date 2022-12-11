@@ -19,7 +19,6 @@
   
   .backdrop.is-hidden .modal {
     opacity: 0;
-  
     transform: translateX(-70%) translateY(-50%);
   }
   
@@ -30,7 +29,7 @@
   
     transform: translateX(-50%) translateY(-50%);
   
-    width: 528px;
+    width: 450px;
     height: 581px;
   
     background: #ffffff;
@@ -100,7 +99,7 @@
   
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.03em;
+    letter-spacing: 0.01em;
   
     margin-bottom: 4px;
   }
@@ -213,11 +212,18 @@
   
   .modal-form-agreement-desc {
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
+    font-size: 12px;
+    line-height: 1.16;
     letter-spacing: 0.03em;
     user-select: none;
-  }
+
+
+    @media screen and (min-width: 1200px){
+      font-size: 14px;
+      line-height: 1.71;
+    } 
+    }
+
   
   .modal-form-btn {
     font-weight: 700;
