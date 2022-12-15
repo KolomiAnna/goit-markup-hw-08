@@ -29,8 +29,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 270px;
-    height: 120px;
+    // width: 270px;
+    // height: 120px;
     background-color: #f5f4fa;
     margin-bottom: 30px;
 
@@ -61,6 +61,9 @@
   
   .character__text {
 
+    @media screen and (min-width:320px){
+      width: 100%;
+     }
 
        //  Phone screen
    @media screen and (min-width:480px){
@@ -73,7 +76,7 @@
     width: 354px;
    }
 
-   @media screen and (min-width:768px){
+   @media screen and (min-width:1200px){
     width: 271px;
    }
   }
